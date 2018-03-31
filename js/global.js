@@ -5,6 +5,7 @@
 */
 
 // get quote from encouragement.gunthercox.com, Returns Promise (string)
+function getQuote() {
 	return fetch("https://encouragement.gunthercox.com/api/encouragement/random/").then(function(response) {
   		return response.json();	
 	}).then(function(data) {
