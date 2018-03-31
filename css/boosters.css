@@ -1,0 +1,37 @@
+/*
+** file: css/boosters.css
+** description: custom styling for "html/boosters.html" file
+*/
+
+@keyframes color-fade-in {
+    from {background-color: #f2f2f2;}
+    to {background-color: #87E2FF;}
+}
+
+body {
+    background: #87E2FF;
+    animation-name: color-fade-in;
+    animation-duration: 3s;
+}
+
+div#settings-jumbotron {
+    text-align: center;
+    width: 400px;
+    background: #87E2FF;
+    border: 20px;
+    animation-name: color-fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes font-fade-in {
+    from {color: #f2f2f2;}
+    to {color: #ffffff;}
+}
+
+div h5, p {
+    color: #ffffff;
+    font-family: Roboto-thin;
+    /*font-family: Pacifico;*/
+    animation-name: font-fade-in;
+    animation-duration: 3s;
+}
