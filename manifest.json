@@ -2,7 +2,7 @@
 	"name": "Watcher",
 	"version": "1.0",
 	"manifest_version": 2,
-	"description": "Chrome extension description written here.",
+	"description": "Chrome extension that does stuff.",
 	"icons": {
 		"19": "images/eye.png",
 		"38": "images/eye.png",
@@ -24,6 +24,6 @@
 			"js": ["js/jquery.min.js", "js/content.js"]
 		}
 	],
-	"options_page": "html/options.html",
+	"options_page": "html/settings.html",
 	"homepage_url": "http://google.com/"
 }
