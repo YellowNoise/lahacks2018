@@ -21,12 +21,9 @@
 			"matches": [
 				"<all_urls>"
 			],
-			"js": ["js/jquery.min.js", "js/background.js"]
+			"js": ["js/jquery.min.js", "js/content.js"]
 		}
 	],
-	"background": {
-		"scripts": ["js/background.js"]
-	},
 	"options_page": "html/options.html",
 	"homepage_url": "http://google.com/"
 }
