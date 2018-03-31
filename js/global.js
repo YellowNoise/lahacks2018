@@ -38,4 +38,28 @@ function getSentiment(textstr){
   }); 
 }
 
+function getSentimentNode(text){
+	//import google cloud client lib
+	const language = require('@google-cloud/language');
+ 
+	// Instantiates a client
+	const client = new language.LanguageServiceClient();
+ 
+ 
+	const document = {
+  	content: text,
+  	type: 'PLAIN_TEXT',
+	};
+ 
+	// Detects the sentiment of the text
+	client
+	  .analyzeSentiment({document: document})
+	  .then(results => {
+	    return results[0].sentences;
+	  })
+	  .catch(err => {
+	    console.error('ERROR:', err);
+	  });
+
+}
 
