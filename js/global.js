@@ -17,6 +17,11 @@ function getSentiment(textstr){
 	return fetch(`http://streamlyne.stream:3003/sentiment?q=${encodeURI(textstr)}`).then(res => res[0]);
 }
 
+//send 'message' to 'number' via twilio
+function sendMessage(message, number){
+	return fetch(`http://streamlyne.stream:3003/twilio?to=${encodeURI(number)}&message=${encodeURI(message)}`).then(res => res[0]);
+}
+
 getSentiment("This is a test sentence. I love text sentences").then(res => {
 	$("#main-outer").html(res);
 });
