@@ -16,7 +16,7 @@ body {
     animation-duration: 3s;
 }
 
-div#main-jumbotron{
+div#message-jumbotron {
     text-align: center;
     width: 400px;
     background: #87E2FF;
@@ -38,12 +38,19 @@ div h1, p {
     animation-duration: 3s;
 }
 
+#message-input {
+
+    rows: "5";
+    cols: "50";
+    padding-left: 25px;
+}
+
 #subtitle {
     font-size: 18pt;
 }
 
-#buttons-container {
-    width: 280px;
+#button-container, #contacts-container {
+    padding: 25px;
 }
 
 div#main-inner {
